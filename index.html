@@ -1,1 +1,464 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia de Activación LATAM | UKG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        ukg: {
+                            cyan: '#00ced1', // Cyan brillante tipo UKG
+                            dark: '#0f172a',
+                            card: '#1e293b',
+                            text: '#cbd5e1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .tab-active {
+            border-bottom: 2px solid #00ced1;
+            color: #00ced1;
+        }
+        .tab-inactive {
+            color: #64748b;
+            border-bottom: 2px solid transparent;
+        }
+        .tab-inactive:hover {
+            color: #cbd5e1;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-ukg-cyan selection:text-black">
+
+    <!-- Navegación Superior -->
+    <nav class="sticky top-0 z-50 glass-panel border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-ukg-cyan rounded-md flex items-center justify-center text-black font-bold">U</div>
+                    <span class="font-bold text-xl tracking-tight">Estrategia LATAM <span class="text-ukg-cyan text-sm font-normal ml-1">| Webinar Q1</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <span class="px-3 py-1 rounded-full bg-ukg-cyan/10 text-ukg-cyan text-xs font-semibold border border-ukg-cyan/20">CONFIDENCIAL</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+
+        <!-- HERO SECTION: Objetivo & Contexto -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 space-y-6">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                    Activación Ejecutiva <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-ukg-cyan to-blue-500">Manufactura & Compliance</span>
+                </h1>
+                <p class="text-lg text-gray-400 max-w-2xl">
+                    Estrategia para lograr la participación activa de cuentas asignadas en MX y BR, apalancando la relación existente entre la casa matriz (USA) y UKG.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                    <div class="p-5 rounded-xl bg-ukg-card border border-gray-700">
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 rounded-lg bg-blue-500/10 text-blue-400"><i class="fa-solid fa-crosshairs"></i></div>
+                            <div>
+                                <h3 class="font-semibold text-white">Objetivo Primario</h3>
+                                <p class="text-sm text-gray-400 mt-1">Conectar cuentas de MX/BR con el webinar global, utilizando el respaldo de la matriz en USA.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-xl bg-ukg-card border border-gray-700">
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 rounded-lg bg-ukg-cyan/10 text-ukg-cyan"><i class="fa-solid fa-network-wired"></i></div>
+                            <div>
+                                <h3 class="font-semibold text-white">Alineación Corporativa</h3>
+                                <p class="text-sm text-gray-400 mt-1">Unificar la visión de gobierno global y consistencia operativa ante las reformas laborales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Narrativa Central Card -->
+            <div class="glass-panel p-6 rounded-2xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-ukg-cyan/5 rounded-full blur-3xl -mr-16 -mt-16 transition-all group-hover:bg-ukg-cyan/10"></div>
+                <h3 class="text-ukg-cyan font-bold uppercase text-xs tracking-wider mb-4">Narrativa Central</h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-check text-ukg-cyan mt-1"></i>
+                        <span class="text-sm text-gray-300">UKG no es un proveedor nuevo; es una extensión de la relación corporativa en USA.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-check text-ukg-cyan mt-1"></i>
+                        <span class="text-sm text-gray-300">La matriz estará en el webinar; asistir es alinearse políticamente.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-check text-ukg-cyan mt-1"></i>
+                        <span class="text-sm text-gray-300">Riesgo compartido: Las reformas en MX/BR impactan el compliance global.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CUENTAS Y ASIGNACIÓN -->
+        <section>
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold text-white">Asignación Estratégica</h2>
+                <span class="text-sm text-gray-500">112 Contactos Actuales | 10 Cuentas Clave</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Igor -->
+                <div class="bg-ukg-card rounded-xl border border-gray-700 overflow-hidden">
+                    <div class="px-6 py-4 border-b border-gray-700 flex justify-between items-center bg-gray-800/50">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center font-bold">IG</div>
+                            <div>
+                                <h3 class="font-bold text-white">Igor</h3>
+                                <p class="text-xs text-gray-400">SDR Lead - Cross Regional</p>
+                            </div>
+                        </div>
+                        <span class="px-2 py-1 bg-purple-500/10 text-purple-400 text-xs rounded border border-purple-500/20">MX & BR</span>
+                    </div>
+                    <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="text-xs font-bold text-gray-500 uppercase mb-2">México</h4>
+                            <ul class="space-y-2">
+                                <li class="text-sm text-gray-300 flex items-center gap-2"><i class="fa-solid fa-building text-gray-600"></i> Kellogg Company</li>
+                                <li class="text-sm text-gray-300 flex items-center gap-2"><i class="fa-solid fa-building text-gray-600"></i> Saint-Gobain</li>
+                                <li class="text-sm text-gray-300 flex items-center gap-2"><i class="fa-solid fa-building text-gray-600"></i> Stryker Corp</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-gray-500 uppercase mb-2">Brasil</h4>
+                            <ul class="space-y-2">
+                                <li class="text-sm text-gray-300 flex items-center gap-2"><i class="fa-solid fa-building text-gray-600"></i> Kellogg Inc.</li>
+                                <li class="text-sm text-gray-300 flex items-center gap-2"><i class="fa-solid fa-building text-gray-600"></i> Saint-Gobain</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robert -->
+                <div class="bg-ukg-card rounded-xl border border-gray-700 overflow-hidden">
+                    <div class="px-6 py-4 border-b border-gray-700 flex justify-between items-center bg-gray-800/50">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center font-bold">RO</div>
+                            <div>
+                                <h3 class="font-bold text-white">Robert</h3>
+                                <p class="text-xs text-gray-400">SDR Lead - México Focus</p>
+                            </div>
+                        </div>
+                        <span class="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded border border-blue-500/20">México</span>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xs font-bold text-gray-500 uppercase mb-2">Cuentas Asignadas</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
+                            <li class="text-sm text-gray-300 flex items-center gap-2 list-none"><i class="fa-solid fa-building text-gray-600"></i> Corning Inc.</li>
+                            <li class="text-sm text-gray-300 flex items-center gap-2 list-none"><i class="fa-solid fa-building text-gray-600"></i> Denso de México</li>
+                            <li class="text-sm text-gray-300 flex items-center gap-2 list-none"><i class="fa-solid fa-building text-gray-600"></i> Medline Ind.</li>
+                            <li class="text-sm text-gray-300 flex items-center gap-2 list-none"><i class="fa-solid fa-building text-gray-600"></i> Medtronic Inc.</li>
+                            <li class="text-sm text-gray-300 flex items-center gap-2 list-none"><i class="fa-solid fa-building text-gray-600"></i> Stanley Black & Decker</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN INTERACTIVA (TABS) -->
+        <section class="bg-ukg-card rounded-2xl border border-gray-700 overflow-hidden shadow-2xl" id="interactive-zone">
+            
+            <!-- Tab Headers -->
+            <div class="flex border-b border-gray-700 overflow-x-auto scrollbar-hide">
+                <button onclick="switchTab('exec')" id="tab-btn-exec" class="flex-1 py-5 px-6 font-medium text-sm sm:text-base whitespace-nowrap transition-colors tab-active flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-list-check"></i> Plan de Ejecución
+                </button>
+                <button onclick="switchTab('docs')" id="tab-btn-docs" class="flex-1 py-5 px-6 font-medium text-sm sm:text-base whitespace-nowrap transition-colors tab-inactive flex items-center justify-center gap-2">
+                    <i class="fa-regular fa-copy"></i> Scripts & Mensajes
+                </button>
+                <button onclick="switchTab('event')" id="tab-btn-event" class="flex-1 py-5 px-6 font-medium text-sm sm:text-base whitespace-nowrap transition-colors tab-inactive flex items-center justify-center gap-2">
+                    <i class="fa-regular fa-calendar-days"></i> Info Webinar
+                </button>
+            </div>
+
+            <!-- TAB CONTENT: EXECUTION -->
+            <div id="content-exec" class="p-8">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <h3 class="text-xl font-bold text-white mb-2">Workflow SDR</h3>
+                        <p class="text-gray-400 text-sm mb-6">El proceso es lineal pero iterativo. Priorizar siempre por nivel de interacción.</p>
+                        <div class="bg-gray-800/50 p-4 rounded-lg border border-gray-700">
+                            <h4 class="text-ukg-cyan font-bold text-sm mb-2">Reglas de Oro</h4>
+                            <ul class="text-sm text-gray-300 space-y-2">
+                                <li>• Analizar perfil antes de conectar.</li>
+                                <li>• No vender producto, vender alineación.</li>
+                                <li>• Usar el documento de apoyo como fuente, no enviar literal.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="md:w-2/3 space-y-6 relative">
+                        <!-- Linea de tiempo visual -->
+                        <div class="absolute left-4 top-2 bottom-2 w-0.5 bg-gray-700"></div>
+
+                        <div class="relative pl-12">
+                            <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-gray-800 border border-ukg-cyan text-ukg-cyan flex items-center justify-center font-bold text-sm">1</div>
+                            <h4 class="text-white font-bold">Investigación Profunda</h4>
+                            <p class="text-sm text-gray-400 mt-1">Revisar presencia en otros países LATAM. Mapear decisores de RRHH, Operaciones y Compliance.</p>
+                        </div>
+                        <div class="relative pl-12">
+                            <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-gray-800 border border-gray-600 text-gray-400 flex items-center justify-center font-bold text-sm">2</div>
+                            <h4 class="text-white font-bold">Expansión de Datos</h4>
+                            <p class="text-sm text-gray-400 mt-1">Uso de Apollo/SignalHire para enriquecer emails y teléfonos directos.</p>
+                        </div>
+                        <div class="relative pl-12">
+                            <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-gray-800 border border-gray-600 text-gray-400 flex items-center justify-center font-bold text-sm">3</div>
+                            <h4 class="text-white font-bold">Activación Multicanal</h4>
+                            <p class="text-sm text-gray-400 mt-1">LinkedIn InMail (Entrada suave) ➔ Email Personalizado (Contexto corporativo).</p>
+                        </div>
+                        <div class="relative pl-12">
+                            <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-gray-800 border border-gray-600 text-gray-400 flex items-center justify-center font-bold text-sm">4</div>
+                            <h4 class="text-white font-bold">Soporte & Cierre</h4>
+                            <p class="text-sm text-gray-400 mt-1">WhatsApp de seguimiento. Ayuda manual con el registro si es necesario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT: DOCS & SCRIPTS -->
+            <div id="content-docs" class="p-8 hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <!-- Columna Izquierda: Concepto -->
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-4">Matriz de Mensajes</h3>
+                        <p class="text-sm text-gray-400 mb-6">Selecciona el canal y el idioma para ver la estructura sugerida. Personaliza siempre los campos entre {{llaves}}.</p>
+                        
+                        <div class="space-y-4">
+                            <!-- Card LinkedIn -->
+                            <div class="p-4 bg-gray-800/40 border border-gray-700 rounded-lg hover:border-blue-500/50 transition-colors cursor-pointer group" onclick="showScript('linkedin-mx')">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fa-brands fa-linkedin text-blue-500 text-xl"></i>
+                                        <span class="font-medium text-white group-hover:text-blue-400">LinkedIn México</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right text-gray-600 text-sm"></i>
+                                </div>
+                            </div>
+                             <!-- Card Email -->
+                             <div class="p-4 bg-gray-800/40 border border-gray-700 rounded-lg hover:border-yellow-500/50 transition-colors cursor-pointer group" onclick="showScript('email-mx')">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fa-solid fa-envelope text-yellow-500 text-xl"></i>
+                                        <span class="font-medium text-white group-hover:text-yellow-400">Email Formal (Español)</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right text-gray-600 text-sm"></i>
+                                </div>
+                            </div>
+                            <!-- Card Brasil -->
+                            <div class="p-4 bg-gray-800/40 border border-gray-700 rounded-lg hover:border-green-500/50 transition-colors cursor-pointer group" onclick="showScript('linkedin-br')">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <i class="fa-brands fa-linkedin text-green-500 text-xl"></i>
+                                        <span class="font-medium text-white group-hover:text-green-400">LinkedIn Brasil (Português)</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right text-gray-600 text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Derecha: Visor de Script -->
+                    <div class="bg-gray-900 rounded-lg border border-gray-700 p-6 relative">
+                        <div class="absolute top-4 right-4">
+                            <button class="text-xs bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded text-white transition" onclick="copyToClipboard()">
+                                <i class="fa-regular fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <h4 class="text-xs uppercase font-bold text-gray-500 mb-4" id="script-title">Vista Previa: LinkedIn MX</h4>
+                        <div class="font-mono text-sm text-gray-300 whitespace-pre-line leading-relaxed" id="script-content">
+Hola {{Nombre}}, ¿cómo estás?
+
+Te escribo porque la casa matriz de {{Empresa}} en Estados Unidos ya trabaja con UKG y estará participando en un webinar global sobre reformas laborales en USA, México y Brasil.
+
+Aunque la operación local no utilice hoy UKG, el cumplimiento y las políticas de gestión de personas siguen alineándose a decisiones corporativas.
+
+👉 Registro al webinar:
+https://www.ukg.com/private/event/701qn00000wc9vpiac
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT: EVENT INFO -->
+            <div id="content-event" class="p-8 hidden">
+                <div class="flex flex-col items-center text-center mb-8">
+                    <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold border border-blue-500/20 mb-4">GLOBAL WEBINAR</span>
+                    <h2 class="text-3xl font-bold text-white mb-2">Navigating Labor Law Changes</h2>
+                    <p class="text-gray-400">U.S., Mexico, and Brazil | Manufacturing Focus</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-gray-800/30 p-4 rounded-lg border border-gray-700 text-center">
+                        <i class="fa-regular fa-calendar text-ukg-cyan text-2xl mb-2"></i>
+                        <p class="font-bold text-white">Jueves, 15 Ene 2026</p>
+                    </div>
+                    <div class="bg-gray-800/30 p-4 rounded-lg border border-gray-700 text-center">
+                        <i class="fa-regular fa-clock text-ukg-cyan text-2xl mb-2"></i>
+                        <p class="font-bold text-white">11 a.m. ET</p>
+                        <p class="text-xs text-gray-500">10 a.m. CDMX</p>
+                    </div>
+                    <div class="bg-gray-800/30 p-4 rounded-lg border border-gray-700 text-center">
+                        <i class="fa-solid fa-globe text-ukg-cyan text-2xl mb-2"></i>
+                        <p class="font-bold text-white">Inglés</p>
+                        <p class="text-xs text-gray-500">Foco Multinacional</p>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 pt-6">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase mb-4">Speakers</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-3 bg-gray-800 px-4 py-2 rounded-full border border-gray-700">
+                            <div class="w-8 h-8 rounded-full bg-gray-600 flex items-center justify-center text-xs">ES</div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Erika Sandoval</p>
+                                <p class="text-[10px] text-gray-400">Global Advisor</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-gray-800 px-4 py-2 rounded-full border border-gray-700">
+                            <div class="w-8 h-8 rounded-full bg-gray-600 flex items-center justify-center text-xs">RC</div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Rodrigo Carrasco</p>
+                                <p class="text-[10px] text-gray-400">LATAM Cloud Sales</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-gray-800 px-4 py-2 rounded-full border border-gray-700">
+                            <div class="w-8 h-8 rounded-full bg-gray-600 flex items-center justify-center text-xs">MA</div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Mariela Aliphat</p>
+                                <p class="text-[10px] text-gray-400">Bimbo Corporate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- FOOTER: RESULTADOS -->
+        <footer class="border-t border-gray-800 pt-8 pb-12">
+            <h3 class="text-center text-xl font-bold text-white mb-8">Definición de Éxito</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div>
+                    <div class="text-3xl font-bold text-ukg-cyan mb-2">1</div>
+                    <p class="text-gray-400 text-sm">Registro confirmado de cuentas MX/BR</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-ukg-cyan mb-2">2</div>
+                    <p class="text-gray-400 text-sm">Detección de stakeholders regionales</p>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold text-ukg-cyan mb-2">3</div>
+                    <p class="text-gray-400 text-sm">Conversación post-webinar agendada</p>
+                </div>
+            </div>
+            <div class="text-center mt-12 text-xs text-gray-600">
+                &copy; 2025 Estrategia Interna Comercial | Documento Confidencial
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        // Lógica de Pestañas (Tabs)
+        function switchTab(tabId) {
+            // Ocultar todos los contenidos
+            ['exec', 'docs', 'event'].forEach(id => {
+                document.getElementById(`content-${id}`).classList.add('hidden');
+                const btn = document.getElementById(`tab-btn-${id}`);
+                btn.classList.remove('tab-active', 'text-ukg-cyan', 'border-ukg-cyan');
+                btn.classList.add('tab-inactive', 'text-gray-400');
+            });
+
+            // Mostrar el seleccionado
+            document.getElementById(`content-${tabId}`).classList.remove('hidden');
+            const activeBtn = document.getElementById(`tab-btn-${tabId}`);
+            activeBtn.classList.remove('tab-inactive', 'text-gray-400');
+            activeBtn.classList.add('tab-active', 'text-ukg-cyan', 'border-ukg-cyan');
+        }
+
+        // Lógica de Scripts
+        const scripts = {
+            'linkedin-mx': `Hola {{Nombre}}, ¿cómo estás?
+
+Te escribo porque la casa matriz de {{Empresa}} en Estados Unidos ya trabaja con UKG y estará participando en un webinar global sobre reformas laborales en USA, México y Brasil.
+
+Aunque la operación local no utilice hoy UKG, el cumplimiento y las políticas de gestión de personas siguen alineándose a decisiones corporativas.
+
+👉 Registro al webinar:
+https://www.ukg.com/private/event/701qn00000wc9vpiac`,
+            'email-mx': `Asunto: ¿Tu fuerza laboral global está lista para las nuevas leyes laborales?
+
+La casa matriz de {{Empresa}} en Estados Unidos ya trabaja con UKG y participará en un webinar global enfocado en las reformas laborales en USA, México y Brasil.
+
+Aunque la filial local no sea cliente actualmente, los riesgos laborales siguen siendo compartidos a nivel corporativo.
+
+👉 Registro:
+https://www.ukg.com/private/event/701qn00000wc9vpiac`,
+            'linkedin-br': `Olá {{Nome}}, tudo bem?
+
+A matriz da {{Empresa}} nos Estados Unidos já trabalha com a UKG e estará participando de um webinar global sobre mudanças trabalhistas nos EUA, Brasil e México.
+
+É uma oportunidade de alinhar a governança local com a estratégia global.
+
+👉 Inscrição:
+https://www.ukg.com/private/event/701qn00000wc9vpiac`
+        };
+
+        function showScript(key) {
+            const content = scripts[key];
+            const titleElement = document.getElementById('script-title');
+            const contentElement = document.getElementById('script-content');
+
+            contentElement.innerText = content;
+            
+            if(key === 'linkedin-mx') titleElement.innerText = "Vista Previa: LinkedIn México";
+            if(key === 'email-mx') titleElement.innerText = "Vista Previa: Email Formal (Español)";
+            if(key === 'linkedin-br') titleElement.innerText = "Vista Previa: LinkedIn Brasil";
+        }
+
+        function copyToClipboard() {
+            const text = document.getElementById('script-content').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Texto copiado al portapapeles');
+            });
+        }
+    </script>
+</body>
+</html>
